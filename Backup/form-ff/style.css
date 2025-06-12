@@ -1,0 +1,147 @@
+/* style.css */
+
+/* --- GAYA UNTUK HEADER TOKO (TAMBAHAN BARU) --- */
+.store-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 15px; /* Jarak antara logo dan teks */
+}
+
+.store-logo {
+    width: 50px;  /* Atur ukuran logo */
+    height: 50px; /* Atur ukuran logo */
+    border-radius: 50%; /* Membuat logo menjadi bulat, hapus jika ingin kotak */
+    object-fit: cover; /* Memastikan gambar logo pas */
+}
+
+.store-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.form-subtitle {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #25D366;
+    box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.2);
+}
+
+.whatsapp-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #1DAE54;
+}
+
+/* --- GAYA UNTUK HEADER TOKO (TAMBAHAN BARU) --- */
+.store-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 15px; /* Jarak antara logo dan teks */
+}
+
+.store-logo {
+    width: 50px;  /* Atur ukuran logo */
+    height: 50px; /* Atur ukuran logo */
+    border-radius: 50%; /* Membuat logo menjadi bulat, hapus jika ingin kotak */
+    object-fit: cover; /* Memastikan gambar logo pas */
+}
+
+.store-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.form-subtitle {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+label .required {
+    color: #e74c3c;
+}

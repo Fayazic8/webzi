@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Topup MLBB</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link untuk ikon WhatsApp dari Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <div class="form-container">
+      <!-- GANTI URL "logo.png" DENGAN URL LOGO TOKO ANDA -->
+      <img src="logo.jpg" alt="Ziee Store" class="store-logo">
+      
+      <h1 class="store-name">Ziee Store</h1>
+      <p class="form-title">Formulir Topup MLBB</p>
+
+      <form id="orderForm">
+          <div class="form-group">
+              <label for="nama">Nama (Opsional)</label>
+              <input type="text" id="nama" placeholder="Contoh: Budi">
+          </div>
+
+          <!-- Bagian ID & Server yang diubah -->
+          <div class="form-group">
+              <label for="userId">User ID & Server ID <span class="required">*</span></label>
+              <div class="id-input-container">
+                  <input type="number" id="userId" placeholder="User ID" required>
+                  <input type="number" id="serverId" placeholder="(Server)" required>
+              </div>
+          </div>
+          <!-- Akhir bagian yang diubah -->
+
+          <div class="form-group">
+              <label for="produk">Pilih Topup <span class="required">*</span></label>
+              <select id="produk" required>
+                  <option value="" disabled selected>-- Pilih Jumlah Diamond --</option>
+                  <option value="Weekly Diamond Pass">Weekly Diamond Pass - Rp 28.600</option>
+                  <option value="5 Diamonds">5 Diamonds - Rp1.500</option>
+                  <option value="59 Diamonds">59 Diamonds - Rp 16.100</option>
+                  <option value="429 Diamonds">429 Diamonds - Rp 100.000</option>
+                  <option value="568 Diamonds">568 Diamonds - Rp 161.000</option>
+                  <option value="1136 Diamonds">1136 Diamonds - Rp 300.000</option>
+                  <option value="Starlight Member">Starlight Member - Rp 140.000</option>
+                  <option value="Twilight Pass">Twilight Pass - Rp 140.000</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+                <label for="pembayaran">Metode Pembayaran <span class="required">*</span></label>
+                <select id="pembayaran" name="pembayaran" required>
+                    <option value="" disabled selected>Pilih Metode Pembayaran</option>
+                    <option value="qris">QRIS</option>
+                    <option value="dana">DANA</option>
+                    <option value="gopay">GoPay</option>
+                    <option value="bank_transfer">Transfer Bank</option>
+                    <option value="cash">Cash (Spesial)</option>
+                </select>
+            </div>
+
+          <button type="submit" class="whatsapp-button">
+              <i class="fab fa-whatsapp"></i>
+              Kirim di WhatsApp
+          </button>
+      </form>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
